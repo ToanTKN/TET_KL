@@ -388,7 +388,7 @@ function showPremiumCard() {
                 position: fixed; top: 50%; left: 50%;
                 transform: translate(-50%, -50%) perspective(1000px) rotateX(90deg) scale(0.5);
                 width: 90%; max-width: 650px; z-index: 9999;
-                text-align: center; padding: 50px 40px; border-radius: 15px;
+                text-align: center; padding: 40px 30px; border-radius: 15px;
                 background: linear-gradient(145deg, #740001, #300000);
                 border: 2px solid #D4AF37;
                 box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(212, 175, 55, 0.2) inset;
@@ -410,40 +410,40 @@ function showPremiumCard() {
                 font-family: 'Dancing Script', cursive;
                 background: linear-gradient(to right, #D4AF37, #FFDF00, #D4AF37);
                 -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-                font-size: 3rem; margin-bottom: 25px; 
+                font-size: 2.8rem; margin-bottom: 20px; 
                 filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6));
             }
             
             .msg-line {
-                font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 1.6;
-                color: #FFF8E7; margin-bottom: 12px; text-align: justify;
+                font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 1.5;
+                color: #FFF8E7; margin-bottom: 15px; text-align: justify;
                 opacity: 0; transform: translateY(20px); transition: opacity 1s ease, transform 1s ease;
             }
             .msg-visible { opacity: 1; transform: translateY(0); }
             .highlight-gold { color: #FFD700; font-weight: 700; }
             
             .final-line {
-                font-family: 'Playfair Display', serif; font-size: 24px;
-                color: #D4AF37; margin-top: 30px; opacity: 0; transform: scale(0.8);
+                font-family: 'Playfair Display', serif; font-size: 22px;
+                color: #D4AF37; margin-top: 25px; opacity: 0; transform: scale(0.8);
                 transition: all 1s cubic-bezier(0.34, 1.56, 0.64, 1);
                 text-transform: uppercase; letter-spacing: 2px;
                 border-top: 1px solid rgba(212, 175, 55, 0.3); border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-                padding: 10px 0;
+                padding: 8px 0;
             }
             .final-visible { opacity: 1; transform: scale(1); }
         </style>
         
-        <div class="card-title">Happy New Year Khánh Ly!</div>
+        <div class="card-title">Happy New Year Quế Anh!</div>
         <div id="line1" class="msg-line">
-            ✨ Năm mới 2026 rồi, chúc <span class="highlight-gold">Khánh Ly</span> một năm thật nhiều niềm vui, sức khỏe và mọi thứ đều thuận lợi hơn năm cũ. Mong là những điều cậu đang cố gắng sẽ dần thành hiện thực, còn những điều chưa kịp bắt đầu thì… biết đâu sẽ nở rộ trong năm nay.
+            ✨ Năm 2026 đã đến rồi. Chúc <span class="highlight-gold">Quế Anh</span> một năm tràn đầy niềm vui, sức khỏe và mọi thứ suôn sẻ hơn năm trước. Mong rằng những điều cậu đang nỗ lực từng ngày sẽ dần trở thành hiện thực, còn những dự định vẫn còn dang dở thì biết đâu năm nay sẽ có cơ hội bắt đầu và nở hoa.
         </div>
         <div id="line2" class="msg-line">
-            🌟 Hy vọng năm mới mang đến cho cậu thật nhiều may mắn, những cơ hội tốt và cả những ngày bình yên để tận hưởng cuộc sống theo cách cậu muốn. 
+            🌟 Hy vọng năm mới mang đến cho cậu thật nhiều may mắn, nhiều cơ hội tốt và thêm những trải nghiệm đáng nhớ. Mong rằng cậu sẽ luôn giữ được năng lượng tích cực, sống đúng với điều mình mong muốn và tận hưởng hành trình của riêng mình.
         </div>
         <div id="line3" class="msg-line">
-            💌 Cảm ơn vì đã luôn là một người bạn rất đặc biệt — người mà mình có thể chia sẻ bất cứ lúc nào, kể cả những chuyện nhỏ nhặt nhất. Chúc cậu một năm bình an và đầy năng lượng tích cực!
+            💌 Cảm ơn vì cậu luôn là một người bạn đặc biệt — người mà mình có thể chia sẻ đủ thứ chuyện trên đời, từ những điều lớn lao cho tới những chuyện nhỏ xíu. Chúc cậu một năm thật bình yên, vui vẻ và luôn cảm thấy hạnh phúc với những gì mình đang có.
         </div>
-        <div id="line4" class="final-line">Chúc Mừng Năm Mới 2026</div>
+        <div id="line4" class="final-line">Chúc Mừng Năm Mới 2026 🎉</div>
     `;
     document.body.appendChild(container);
 
@@ -452,7 +452,7 @@ function showPremiumCard() {
         container.classList.add('card-visible');
         setTimeout(() => { container.classList.add('card-floating'); }, 2200);
         
-        var delay = 1200;
+        var delay = 1500; // Tăng delay lên một chút vì văn bản dài hơn
         setTimeout(() => { document.getElementById('line1').classList.add('msg-visible'); }, 500);
         setTimeout(() => { document.getElementById('line2').classList.add('msg-visible'); }, 500 + delay);
         setTimeout(() => { document.getElementById('line3').classList.add('msg-visible'); }, 500 + delay * 2);
